@@ -1,0 +1,594 @@
+[
+  {
+    "page": "/BugChaser/faq.html",
+    "target": "index.html",
+    "image": "images/button9.jpg",
+    "label": "Главная",
+    "width": 100,
+    "height": 33
+  },
+  {
+    "page": "/BugChaser/faq.html",
+    "target": "store.html",
+    "image": "images/button10.jpg",
+    "label": "Магазин",
+    "width": 100,
+    "height": 33
+  },
+  {
+    "page": "/BugChaser/faq.html",
+    "target": "faq.html",
+    "image": "images/buttonD.jpg",
+    "label": "Вопросы",
+    "width": 100,
+    "height": 33
+  },
+  {
+    "page": "/BugChaser/index.html",
+    "target": "index.html",
+    "image": "images/button9.jpg",
+    "label": "Главная",
+    "width": 100,
+    "height": 33
+  },
+  {
+    "page": "/BugChaser/index.html",
+    "target": "store.html",
+    "image": "images/button10.jpg",
+    "label": "Магазин",
+    "width": 100,
+    "height": 33
+  },
+  {
+    "page": "/BugChaser/index.html",
+    "target": "faq.html",
+    "image": "images/buttonD.jpg",
+    "label": "Вопросы",
+    "width": 100,
+    "height": 33
+  },
+  {
+    "page": "/BugChaser/index.html",
+    "target": "join.html",
+    "image": "images/joinbutton.jpg",
+    "label": "Вступить",
+    "width": 300,
+    "height": 36
+  },
+  {
+    "page": "/BugChaser/index.html",
+    "target": "noid.html",
+    "image": "images/button37.jpg",
+    "label": "Отправить",
+    "width": 100,
+    "height": 20
+  },
+  {
+    "page": "/BugChaser/join.html",
+    "target": "index.html",
+    "image": "images/button9.jpg",
+    "label": "Главная",
+    "width": 100,
+    "height": 33
+  },
+  {
+    "page": "/BugChaser/join.html",
+    "target": "store.html",
+    "image": "images/button10.jpg",
+    "label": "Магазин",
+    "width": 100,
+    "height": 33
+  },
+  {
+    "page": "/BugChaser/join.html",
+    "target": "faq.html",
+    "image": "images/buttonD.jpg",
+    "label": "Вопросы",
+    "width": 100,
+    "height": 33
+  },
+  {
+    "page": "/BugChaser/join.html",
+    "target": "noid.html",
+    "image": "images/button37.jpg",
+    "label": "Отправить",
+    "width": 100,
+    "height": 20
+  },
+  {
+    "page": "/BugChaser/store.html",
+    "target": "index.html",
+    "image": "images/button9.jpg",
+    "label": "Главная",
+    "width": 100,
+    "height": 33
+  },
+  {
+    "page": "/BugChaser/store.html",
+    "target": "store.html",
+    "image": "images/button10.jpg",
+    "label": "Магазин",
+    "width": 100,
+    "height": 33
+  },
+  {
+    "page": "/BugChaser/store.html",
+    "target": "faq.html",
+    "image": "images/buttonD.jpg",
+    "label": "Вопросы",
+    "width": 100,
+    "height": 33
+  },
+  {
+    "page": "/BugChaser/store.html",
+    "target": "noid.html",
+    "image": "images/button2D.jpg",
+    "label": "Купить",
+    "width": 100,
+    "height": 20
+  },
+  {
+    "page": "/BugChaser/store.html",
+    "target": "noid.html",
+    "image": "images/button2D.jpg",
+    "label": "Купить",
+    "width": 100,
+    "height": 20
+  },
+  {
+    "page": "/BugChaser/store.html",
+    "target": "noid.html",
+    "image": "images/button2D.jpg",
+    "label": "Купить",
+    "width": 100,
+    "height": 20
+  },
+  {
+    "page": "/BugChaser/store.html",
+    "target": "noid.html",
+    "image": "images/button2D.jpg",
+    "label": "Купить",
+    "width": 100,
+    "height": 20
+  },
+  {
+    "page": "/evidencelocker/confiscated.html",
+    "target": "purchase.html",
+    "image": "images/buttonC.jpg",
+    "label": "Оплатить",
+    "width": 100,
+    "height": 20
+  },
+  {
+    "page": "/evidencelocker/confiscated.html",
+    "target": "purchase.html",
+    "image": "images/buttonC.jpg",
+    "label": "Оплатить",
+    "width": 100,
+    "height": 20
+  },
+  {
+    "page": "/evidencelocker/confiscated.html",
+    "target": "purchase.html",
+    "image": "images/buttonC.jpg",
+    "label": "Оплатить",
+    "width": 100,
+    "height": 20
+  },
+  {
+    "page": "/evidencelocker/confiscated.html",
+    "target": "purchase.html",
+    "image": "images/buttonC.jpg",
+    "label": "Оплатить",
+    "width": 100,
+    "height": 20
+  },
+  {
+    "page": "/evidencelocker/leaked.html",
+    "target": "purchase.html",
+    "image": "images/buttonC.jpg",
+    "label": "Оплатить",
+    "width": 100,
+    "height": 20
+  },
+  {
+    "page": "/evidencelocker/leaked.html",
+    "target": "purchase.html",
+    "image": "images/buttonC.jpg",
+    "label": "Оплатить",
+    "width": 100,
+    "height": 20
+  },
+  {
+    "page": "/evidencelocker/leaked.html",
+    "target": "purchase.html",
+    "image": "images/buttonC.jpg",
+    "label": "Оплатить",
+    "width": 100,
+    "height": 20
+  },
+  {
+    "page": "/evidencelocker/leaked.html",
+    "target": "purchase.html",
+    "image": "images/buttonC.jpg",
+    "label": "Оплатить",
+    "width": 100,
+    "height": 20
+  },
+  {
+    "page": "/evidencelocker/leaked.html",
+    "target": "purchase.html",
+    "image": "images/buttonC.jpg",
+    "label": "Оплатить",
+    "width": 100,
+    "height": 20
+  },
+  {
+    "page": "/evidencelocker/leaked.html",
+    "target": "purchase.html",
+    "image": "images/buttonC.jpg",
+    "label": "Оплатить",
+    "width": 100,
+    "height": 20
+  },
+  {
+    "page": "/evidencelocker/leaked.html",
+    "target": "purchase.html",
+    "image": "images/buttonC.jpg",
+    "label": "Оплатить",
+    "width": 100,
+    "height": 20
+  },
+  {
+    "page": "/evidencelocker/leaked.html",
+    "target": "purchase.html",
+    "image": "images/buttonC.jpg",
+    "label": "Оплатить",
+    "width": 100,
+    "height": 20
+  },
+  {
+    "page": "/evidencelocker/leaked.html",
+    "target": "purchase.html",
+    "image": "images/buttonC.jpg",
+    "label": "Оплатить",
+    "width": 100,
+    "height": 20
+  },
+  {
+    "page": "/FootDoctor/homemade.html",
+    "target": "index.html",
+    "image": "images/ButtonHome.png",
+    "label": "Главная",
+    "width": 100,
+    "height": 33
+  },
+  {
+    "page": "/FootDoctor/homemade.html",
+    "target": "myfavoritefeet.html",
+    "image": "images/ButtnFaveFeet.png",
+    "label": "Любимое",
+    "width": 250,
+    "height": 33
+  },
+  {
+    "page": "/FootDoctor/homemade.html",
+    "target": "homemade.html",
+    "image": "images/ButtonHomeMade.png",
+    "label": "Мои снимки",
+    "width": 170,
+    "height": 33
+  },
+  {
+    "page": "/FootDoctor/homemade.html",
+    "target": "sendmepics.html",
+    "image": "images/ButtonSendPics.png",
+    "label": "Прислать фото",
+    "width": 180,
+    "height": 33
+  },
+  {
+    "page": "/FootDoctor/index.html",
+    "target": "index.html",
+    "image": "images/ButtonHome.png",
+    "label": "Главная",
+    "width": 100,
+    "height": 33
+  },
+  {
+    "page": "/FootDoctor/index.html",
+    "target": "myfavoritefeet.html",
+    "image": "images/ButtnFaveFeet.png",
+    "label": "Любимое",
+    "width": 250,
+    "height": 33
+  },
+  {
+    "page": "/FootDoctor/index.html",
+    "target": "homemade.html",
+    "image": "images/ButtonHomeMade.png",
+    "label": "Мои снимки",
+    "width": 170,
+    "height": 33
+  },
+  {
+    "page": "/FootDoctor/index.html",
+    "target": "sendmepics.html",
+    "image": "images/ButtonSendPics.png",
+    "label": "Прислать фото",
+    "width": 180,
+    "height": 33
+  },
+  {
+    "page": "/FootDoctor/myfavoritefeet.html",
+    "target": "index.html",
+    "image": "images/ButtonHome.png",
+    "label": "Главная",
+    "width": 100,
+    "height": 33
+  },
+  {
+    "page": "/FootDoctor/myfavoritefeet.html",
+    "target": "myfavoritefeet.html",
+    "image": "images/ButtnFaveFeet.png",
+    "label": "Любимое",
+    "width": 250,
+    "height": 33
+  },
+  {
+    "page": "/FootDoctor/myfavoritefeet.html",
+    "target": "homemade.html",
+    "image": "images/ButtonHomeMade.png",
+    "label": "Мои снимки",
+    "width": 170,
+    "height": 33
+  },
+  {
+    "page": "/FootDoctor/myfavoritefeet.html",
+    "target": "sendmepics.html",
+    "image": "images/ButtonSendPics.png",
+    "label": "Прислать фото",
+    "width": 180,
+    "height": 33
+  },
+  {
+    "page": "/FootDoctor/sendmepics.html",
+    "target": "index.html",
+    "image": "images/ButtonHome.png",
+    "label": "Главная",
+    "width": 100,
+    "height": 33
+  },
+  {
+    "page": "/FootDoctor/sendmepics.html",
+    "target": "myfavoritefeet.html",
+    "image": "images/ButtnFaveFeet.png",
+    "label": "Любимое",
+    "width": 250,
+    "height": 33
+  },
+  {
+    "page": "/FootDoctor/sendmepics.html",
+    "target": "homemade.html",
+    "image": "images/ButtonHomeMade.png",
+    "label": "Мои снимки",
+    "width": 170,
+    "height": 33
+  },
+  {
+    "page": "/FootDoctor/sendmepics.html",
+    "target": "sendmepics.html",
+    "image": "images/ButtonSendPics.png",
+    "label": "Прислать фото",
+    "width": 180,
+    "height": 33
+  },
+  {
+    "page": "/Heirloom/index.html",
+    "target": "walletid.html",
+    "image": "images/button4.jpg",
+    "label": "Купить",
+    "width": 150,
+    "height": 30
+  },
+  {
+    "page": "/Heirloom/index.html",
+    "target": "walletid.html",
+    "image": "images/button4.jpg",
+    "label": "Купить",
+    "width": 150,
+    "height": 30
+  },
+  {
+    "page": "/Heirloom/index.html",
+    "target": "walletid.html",
+    "image": "images/button4.jpg",
+    "label": "Купить",
+    "width": 150,
+    "height": 30
+  },
+  {
+    "page": "/Heirloom/index.html",
+    "target": "walletid.html",
+    "image": "images/button4.jpg",
+    "label": "Купить",
+    "width": 150,
+    "height": 30
+  },
+  {
+    "page": "/Heirloom/index.html",
+    "target": "walletid.html",
+    "image": "images/button4.jpg",
+    "label": "Купить",
+    "width": 150,
+    "height": 30
+  },
+  {
+    "page": "/Heirloom/index.html",
+    "target": "walletid.html",
+    "image": "images/button4.jpg",
+    "label": "Купить",
+    "width": 150,
+    "height": 30
+  },
+  {
+    "page": "/Heirloom/index.html",
+    "target": "walletid.html",
+    "image": "images/button4.jpg",
+    "label": "Купить",
+    "width": 150,
+    "height": 30
+  },
+  {
+    "page": "/Heirloom/index.html",
+    "target": "walletid.html",
+    "image": "images/button4.jpg",
+    "label": "Купить",
+    "width": 150,
+    "height": 30
+  },
+  {
+    "page": "/Heirloom/specials.html",
+    "target": "walletid.html",
+    "image": "images/button4.jpg",
+    "label": "Купить",
+    "width": 150,
+    "height": 30
+  },
+  {
+    "page": "/Heirloom/specials.html",
+    "target": "walletid.html",
+    "image": "images/button4.jpg",
+    "label": "Купить",
+    "width": 150,
+    "height": 30
+  },
+  {
+    "page": "/Heirloom/walletid.html",
+    "target": "error.html",
+    "image": "images/buttonE.jpg",
+    "label": "Отправить",
+    "width": 100,
+    "height": 20
+  },
+  {
+    "page": "/mygut/shop.html",
+    "target": "buy.html",
+    "image": "images/button22.jpg",
+    "label": "Купить",
+    "width": 100,
+    "height": 25
+  },
+  {
+    "page": "/mygut/shop.html",
+    "target": "buy.html",
+    "image": "images/button22.jpg",
+    "label": "Купить",
+    "width": 100,
+    "height": 25
+  },
+  {
+    "page": "/mygut/shop.html",
+    "target": "buy.html",
+    "image": "images/button22.jpg",
+    "label": "Купить",
+    "width": 100,
+    "height": 25
+  },
+  {
+    "page": "/mygut/shop.html",
+    "target": "buy.html",
+    "image": "images/button22.jpg",
+    "label": "Купить",
+    "width": 100,
+    "height": 25
+  },
+  {
+    "page": "/mygut/shop.html",
+    "target": "buy.html",
+    "image": "images/button22.jpg",
+    "label": "Купить",
+    "width": 100,
+    "height": 25
+  },
+  {
+    "page": "/mygut/shop.html",
+    "target": "buy.html",
+    "image": "images/button22.jpg",
+    "label": "Купить",
+    "width": 100,
+    "height": 25
+  },
+  {
+    "page": "/mygut/shop.html",
+    "target": "buy.html",
+    "image": "images/button22.jpg",
+    "label": "Купить",
+    "width": 100,
+    "height": 25
+  },
+  {
+    "page": "/mygut/shop.html",
+    "target": "buy.html",
+    "image": "images/button22.jpg",
+    "label": "Купить",
+    "width": 100,
+    "height": 25
+  },
+  {
+    "page": "/mygut/shop.html",
+    "target": "buy.html",
+    "image": "images/button22.jpg",
+    "label": "Купить",
+    "width": 100,
+    "height": 25
+  },
+  {
+    "page": "/mygut/special.html",
+    "target": "buy.html",
+    "image": "images/button22.jpg",
+    "label": "Купить",
+    "width": 100,
+    "height": 25
+  },
+  {
+    "page": "/mygut/special.html",
+    "target": "buy.html",
+    "image": "images/button22.jpg",
+    "label": "Купить",
+    "width": 100,
+    "height": 25
+  },
+  {
+    "page": "/mygut/special.html",
+    "target": "buy.html",
+    "image": "images/button22.jpg",
+    "label": "Купить",
+    "width": 100,
+    "height": 25
+  },
+  {
+    "page": "/mygut/special.html",
+    "target": "buy.html",
+    "image": "images/button22.jpg",
+    "label": "Купить",
+    "width": 100,
+    "height": 25
+  },
+  {
+    "page": "/mygut/special.html",
+    "target": "buy.html",
+    "image": "images/button22.jpg",
+    "label": "Купить",
+    "width": 100,
+    "height": 25
+  },
+  {
+    "page": "/mygut/special.html",
+    "target": "buy.html",
+    "image": "images/button22.jpg",
+    "label": "Купить",
+    "width": 100,
+    "height": 25
+  }
+]

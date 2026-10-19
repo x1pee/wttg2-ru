@@ -1,0 +1,989 @@
+[
+  {
+    "Type": "VPNMenuObject",
+    "Method": "BuildMe",
+    "Offset": 53,
+    "Text": "VPN Level 1",
+    "Russian": "VPN, уровень 1"
+  },
+  {
+    "Type": "VPNMenuObject",
+    "Method": "BuildMe",
+    "Offset": 64,
+    "Text": "VPN Level 2",
+    "Russian": "VPN, уровень 2"
+  },
+  {
+    "Type": "VPNMenuObject",
+    "Method": "BuildMe",
+    "Offset": 75,
+    "Text": "VPN Level 3",
+    "Russian": "VPN, уровень 3"
+  },
+  {
+    "Type": "VPNMenuObject",
+    "Method": "BuildMe",
+    "Offset": 86,
+    "Text": "VPN Level 4",
+    "Russian": "VPN, уровень 4"
+  },
+  {
+    "Type": "VPNMenuObject",
+    "Method": "BuildMe",
+    "Offset": 97,
+    "Text": "VPN Level 5",
+    "Russian": "VPN, уровень 5"
+  },
+  {
+    "Type": "NoirTunnelBehaviour",
+    "Method": "<presentLocation>m__1",
+    "Offset": 285,
+    "Text": "  Loading NOIRTUNNEL v2.15",
+    "Russian": "  Загрузка NOIRTUNNEL v2.15"
+  },
+  {
+    "Type": "NoirTunnelBehaviour",
+    "Method": "<presentLocation>m__1",
+    "Offset": 327,
+    "Text": "  Locating...",
+    "Russian": "  Поиск местоположения..."
+  },
+  {
+    "Type": "NoirTunnelBehaviour",
+    "Method": "<presentLocation>m__1",
+    "Offset": 399,
+    "Text": "  Location Found!",
+    "Russian": "  Местоположение найдено!"
+  },
+  {
+    "Type": "NoirTunnelBehaviour",
+    "Method": "<presentLocation>m__1",
+    "Offset": 471,
+    "Text": "  Lat: 41.064282",
+    "Russian": "  Шир.: 41.064282"
+  },
+  {
+    "Type": "NoirTunnelBehaviour",
+    "Method": "<presentLocation>m__1",
+    "Offset": 507,
+    "Text": "  Lon: -71.877133",
+    "Russian": "  Долг.: -71.877133"
+  },
+  {
+    "Type": "NoirTunnelBehaviour",
+    "Method": "<presentLocation>m__1",
+    "Offset": 615,
+    "Text": "  Incoming Message...",
+    "Russian": "  Входящее сообщение..."
+  },
+  {
+    "Type": "NoirTunnelBehaviour",
+    "Method": "<presentLocation>m__1",
+    "Offset": 651,
+    "Text": ">  Hey it's Adam.",
+    "Russian": ">  Привет, это Адам."
+  },
+  {
+    "Type": "NoirTunnelBehaviour",
+    "Method": "<presentLocation>m__1",
+    "Offset": 687,
+    "Text": ">  You found the location! Excellent work!",
+    "Russian": ">  Ты нашёл нужное место! Отличная работа!"
+  },
+  {
+    "Type": "NoirTunnelBehaviour",
+    "Method": "<presentLocation>m__1",
+    "Offset": 723,
+    "Text": ">  Head there now by exiting the lobby.",
+    "Russian": ">  Отправляйся туда. Для этого выйди из вестибюля."
+  },
+  {
+    "Type": "ShadowMarketProductsBTNBehaviour",
+    "Method": "SetToBuy",
+    "Offset": 30,
+    "Text": "BUY",
+    "Russian": "КУПИТЬ"
+  },
+  {
+    "Type": "ShadowMarketProductsBTNBehaviour",
+    "Method": "SetToOwned",
+    "Offset": 30,
+    "Text": "OWNED",
+    "Russian": "КУПЛЕНО"
+  },
+  {
+    "Type": "ShadowMarketProductsBTNBehaviour",
+    "Method": "SetToShipped",
+    "Offset": 30,
+    "Text": "SHIPPED!",
+    "Russian": "ОТПРАВЛЕНО!"
+  },
+  {
+    "Type": "ShadowMarketProductsBTNBehaviour",
+    "Method": "ShipAni",
+    "Offset": 43,
+    "Text": "Shipping...",
+    "Russian": "Доставка..."
+  },
+  {
+    "Type": "skyBreakBehavior",
+    "Method": "SpitInvalidCMD",
+    "Offset": 13,
+    "Text": "' is not a recognized valid command.",
+    "Russian": "' — неизвестная команда."
+  },
+  {
+    "Type": "skyBreakModeBehavior",
+    "Method": "ModeListCrackers",
+    "Offset": 24,
+    "Text": "You have the following crackers installed:",
+    "Russian": "У вас установлены следующие модули взлома:"
+  },
+  {
+    "Type": "skyBreakModeBehavior",
+    "Method": "ModeSwitchToWPA",
+    "Offset": 45,
+    "Text": "You do not have the WPA cracker installed!",
+    "Russian": "У вас не установлен модуль взлома WPA!"
+  },
+  {
+    "Type": "skyBreakModeBehavior",
+    "Method": "ModeSwitchToWPA2",
+    "Offset": 45,
+    "Text": "You do not have the WPA2 cracker installed!",
+    "Russian": "У вас не установлен модуль взлома WPA2!"
+  },
+  {
+    "Type": "skyBreakWEPBehavior",
+    "Method": "PerformScan",
+    "Offset": 29,
+    "Text": "Scanning...",
+    "Russian": "Сканирование..."
+  },
+  {
+    "Type": "skyBreakWEPBehavior",
+    "Method": "ScanResults",
+    "Offset": 186,
+    "Text": "Scanned WEP Network Results",
+    "Russian": "Результаты поиска сетей WEP"
+  },
+  {
+    "Type": "skyBreakWEPBehavior",
+    "Method": "PerformProbe",
+    "Offset": 46,
+    "Text": "Invalid usage of probe. Valid usage: probe <BSSID> <Port Start> <Port End>",
+    "Russian": "Неверный формат команды probe. Используйте: probe <BSSID> <Port Start> <Port End>"
+  },
+  {
+    "Type": "skyBreakWEPBehavior",
+    "Method": "PerformProbe",
+    "Offset": 104,
+    "Text": "Invalid port number. Valid port range is 1 - 1000.",
+    "Russian": "Неверный номер порта. Допустимый диапазон: 1–1000."
+  },
+  {
+    "Type": "skyBreakWEPBehavior",
+    "Method": "PerformProbe",
+    "Offset": 127,
+    "Text": "Invalid port number. Valid port range is 1 - 1000.",
+    "Russian": "Неверный номер порта. Допустимый диапазон: 1–1000."
+  },
+  {
+    "Type": "skyBreakWEPBehavior",
+    "Method": "PerformProbe",
+    "Offset": 140,
+    "Text": "Could not find a network with the BSSID Of '",
+    "Russian": "Не найдена сеть с BSSID '"
+  },
+  {
+    "Type": "skyBreakWEPBehavior",
+    "Method": "PerformProbe",
+    "Offset": 205,
+    "Text": "Invalid port number. Valid port range is 1 - 1000.",
+    "Russian": "Неверный номер порта. Допустимый диапазон: 1–1000."
+  },
+  {
+    "Type": "skyBreakWEPBehavior",
+    "Method": "PerformProbe",
+    "Offset": 227,
+    "Text": "Invalid port entry. Ending port can not be greater then starting port.",
+    "Russian": "Неверный диапазон портов. Проверьте начальный и конечный порт."
+  },
+  {
+    "Type": "skyBreakWEPBehavior",
+    "Method": "DoProbe",
+    "Offset": 26,
+    "Text": "Targeting '",
+    "Russian": "Цель: '"
+  },
+  {
+    "Type": "skyBreakWEPBehavior",
+    "Method": "DoProbe",
+    "Offset": 109,
+    "Text": "Probing port: ",
+    "Russian": "Проверка порта: "
+  },
+  {
+    "Type": "skyBreakWEPBehavior",
+    "Method": "UpdateProbeLine",
+    "Offset": 75,
+    "Text": "Probing port: ",
+    "Russian": "Проверка порта: "
+  },
+  {
+    "Type": "skyBreakWEPBehavior",
+    "Method": "ProbeFoundPort",
+    "Offset": 47,
+    "Text": "FOUND OPEN PORT! ON '",
+    "Russian": "НАЙДЕН ОТКРЫТЫЙ ПОРТ В СЕТИ '"
+  },
+  {
+    "Type": "skyBreakWEPBehavior",
+    "Method": "ProbeFoundPort",
+    "Offset": 124,
+    "Text": "Open Port #:",
+    "Russian": "Открытый порт №:"
+  },
+  {
+    "Type": "skyBreakWEPBehavior",
+    "Method": "ProbeNoPortFound",
+    "Offset": 47,
+    "Text": "Could not find an open port on '",
+    "Russian": "Не найден открытый порт в сети '"
+  },
+  {
+    "Type": "skyBreakWEPBehavior",
+    "Method": "ProbeNoPortFound",
+    "Offset": 124,
+    "Text": "Try a differnt port range.",
+    "Russian": "Попробуйте другой диапазон портов."
+  },
+  {
+    "Type": "skyBreakWEPBehavior",
+    "Method": "PerformCrack",
+    "Offset": 46,
+    "Text": "Invalid usage of crack. Valid usage: crack <BSSID> <CH> <PORT>",
+    "Russian": "Неверный формат команды crack. Используйте: crack <BSSID> <CH> <PORT>"
+  },
+  {
+    "Type": "skyBreakWEPBehavior",
+    "Method": "PerformCrack",
+    "Offset": 104,
+    "Text": "Invalid channel number.",
+    "Russian": "Неверный номер канала."
+  },
+  {
+    "Type": "skyBreakWEPBehavior",
+    "Method": "PerformCrack",
+    "Offset": 127,
+    "Text": "Invalid port number.",
+    "Russian": "Неверный номер порта."
+  },
+  {
+    "Type": "skyBreakWEPBehavior",
+    "Method": "PerformCrack",
+    "Offset": 140,
+    "Text": "Could not find a network with the BSSID Of '",
+    "Russian": "Не найдена сеть с BSSID '"
+  },
+  {
+    "Type": "skyBreakWEPBehavior",
+    "Method": "PerformCrack",
+    "Offset": 185,
+    "Text": "Could not connect to network '",
+    "Russian": "Не удалось подключиться к сети '"
+  },
+  {
+    "Type": "skyBreakWEPBehavior",
+    "Method": "PerformCrack",
+    "Offset": 201,
+    "Text": "' on channel:",
+    "Russian": "', канал:"
+  },
+  {
+    "Type": "skyBreakWEPBehavior",
+    "Method": "PerformCrack",
+    "Offset": 246,
+    "Text": "Could not connect to network '",
+    "Russian": "Не удалось подключиться к сети '"
+  },
+  {
+    "Type": "skyBreakWEPBehavior",
+    "Method": "PerformCrack",
+    "Offset": 262,
+    "Text": "' with port:",
+    "Russian": "', порт:"
+  },
+  {
+    "Type": "skyBreakWEPBehavior",
+    "Method": "DoCrack",
+    "Offset": 115,
+    "Text": "    [10 keys tested (500 k/s)]",
+    "Russian": "    [Проверено 10 ключей (500 тыс./с)]"
+  },
+  {
+    "Type": "skyBreakWEPBehavior",
+    "Method": "DoCrack",
+    "Offset": 189,
+    "Text": "Master Key",
+    "Russian": "Главный ключ"
+  },
+  {
+    "Type": "skyBreakWEPBehavior",
+    "Method": "DoCrack",
+    "Offset": 270,
+    "Text": "Transient Key",
+    "Russian": "Временный ключ"
+  },
+  {
+    "Type": "skyBreakWEPBehavior",
+    "Method": "UpdateKeysTested",
+    "Offset": 69,
+    "Text": " keys tested (500 k/s)]",
+    "Russian": " ключей проверено (500 тыс./с)]"
+  },
+  {
+    "Type": "skyBreakWEPBehavior",
+    "Method": "Cracked",
+    "Offset": 154,
+    "Text": "' HAS BEEN CRACKED!",
+    "Russian": "' ВЗЛОМАНА!"
+  },
+  {
+    "Type": "skyBreakWEPBehavior",
+    "Method": "Cracked",
+    "Offset": 204,
+    "Text": "    PASSWORD FOUND! [",
+    "Russian": "    ПАРОЛЬ НАЙДЕН! ["
+  },
+  {
+    "Type": "skyBreakWPA2Behavior",
+    "Method": "PerformScan",
+    "Offset": 29,
+    "Text": "Scanning...",
+    "Russian": "Сканирование..."
+  },
+  {
+    "Type": "skyBreakWPA2Behavior",
+    "Method": "ScanResults",
+    "Offset": 62,
+    "Text": "Scanned WPA2 Network Results",
+    "Russian": "Результаты поиска сетей WPA2"
+  },
+  {
+    "Type": "skyBreakWPA2Behavior",
+    "Method": "PerformInject",
+    "Offset": 46,
+    "Text": "Invalid usage of inject. Valid usage: inject <BSSID> <CH> <Injections>",
+    "Russian": "Неверный формат команды inject. Используйте: inject <BSSID> <CH> <Injections>"
+  },
+  {
+    "Type": "skyBreakWPA2Behavior",
+    "Method": "PerformInject",
+    "Offset": 104,
+    "Text": "Invalid channel number.",
+    "Russian": "Неверный номер канала."
+  },
+  {
+    "Type": "skyBreakWPA2Behavior",
+    "Method": "PerformInject",
+    "Offset": 127,
+    "Text": "Invalid injection amount.",
+    "Russian": "Неверное число запросов."
+  },
+  {
+    "Type": "skyBreakWPA2Behavior",
+    "Method": "PerformInject",
+    "Offset": 140,
+    "Text": "Could not find a network with the BSSID Of '",
+    "Russian": "Не найдена сеть с BSSID '"
+  },
+  {
+    "Type": "skyBreakWPA2Behavior",
+    "Method": "PerformInject",
+    "Offset": 185,
+    "Text": "Invalid channel number.",
+    "Russian": "Неверный номер канала."
+  },
+  {
+    "Type": "skyBreakWPA2Behavior",
+    "Method": "PerformInject",
+    "Offset": 213,
+    "Text": "Invalid injection amount. Please select 1 - 1000",
+    "Russian": "Неверное число запросов. Укажите число от 1 до 1000."
+  },
+  {
+    "Type": "skyBreakWPA2Behavior",
+    "Method": "AddInjection",
+    "Offset": 205,
+    "Text": "Injecting De-Auth request into '",
+    "Russian": "Отправка запроса деаутентификации в сеть '"
+  },
+  {
+    "Type": "skyBreakWPA2Behavior",
+    "Method": "AddInjection",
+    "Offset": 497,
+    "Text": "Too many injection requests were sent at once. Network is now offline.",
+    "Russian": "Отправлено слишком много запросов одновременно. Сеть отключилась."
+  },
+  {
+    "Type": "skyBreakWPA2Behavior",
+    "Method": "AddInjection",
+    "Offset": 524,
+    "Text": "Remember to only send a little at a time to prevent the system from going offline.",
+    "Russian": "Отправляйте запросы небольшими порциями, чтобы сеть не отключилась."
+  },
+  {
+    "Type": "skyBreakWPA2Behavior",
+    "Method": "AddInjection",
+    "Offset": 714,
+    "Text": "Injection De-Auth injection was successful! Network is now ready to crack.",
+    "Russian": "Запрос деаутентификации выполнен! Теперь сеть можно взломать."
+  },
+  {
+    "Type": "skyBreakWPA2Behavior",
+    "Method": "PerformCrack",
+    "Offset": 43,
+    "Text": "Invalid usage of crack. Valid usage: crack <BSSID> <CH>",
+    "Russian": "Неверный формат команды crack. Используйте: crack <BSSID> <CH>"
+  },
+  {
+    "Type": "skyBreakWPA2Behavior",
+    "Method": "PerformCrack",
+    "Offset": 101,
+    "Text": "Invalid channel number.",
+    "Russian": "Неверный номер канала."
+  },
+  {
+    "Type": "skyBreakWPA2Behavior",
+    "Method": "PerformCrack",
+    "Offset": 114,
+    "Text": "Could not find a network with the BSSID Of '",
+    "Russian": "Не найдена сеть с BSSID '"
+  },
+  {
+    "Type": "skyBreakWPA2Behavior",
+    "Method": "PerformCrack",
+    "Offset": 159,
+    "Text": "Could not connect to network '",
+    "Russian": "Не удалось подключиться к сети '"
+  },
+  {
+    "Type": "skyBreakWPA2Behavior",
+    "Method": "PerformCrack",
+    "Offset": 175,
+    "Text": "' on channel:",
+    "Russian": "', канал:"
+  },
+  {
+    "Type": "skyBreakWPA2Behavior",
+    "Method": "PerformCrack",
+    "Offset": 266,
+    "Text": "Can not crack network '",
+    "Russian": "Не удалось взломать сеть '"
+  },
+  {
+    "Type": "skyBreakWPA2Behavior",
+    "Method": "PerformCrack",
+    "Offset": 282,
+    "Text": "'. No De-Auth request has been set!",
+    "Russian": "'. Сначала отправьте запрос деаутентификации!"
+  },
+  {
+    "Type": "skyBreakWPA2Behavior",
+    "Method": "PerformCrack",
+    "Offset": 300,
+    "Text": "Can not crack network '",
+    "Russian": "Не удалось взломать сеть '"
+  },
+  {
+    "Type": "skyBreakWPA2Behavior",
+    "Method": "PerformCrack",
+    "Offset": 316,
+    "Text": "'. No De-Auth request has been set!",
+    "Russian": "'. Сначала отправьте запрос деаутентификации!"
+  },
+  {
+    "Type": "skyBreakWPA2Behavior",
+    "Method": "DoCrack",
+    "Offset": 115,
+    "Text": "    [10 keys tested (500 k/s)]",
+    "Russian": "    [Проверено 10 ключей (500 тыс./с)]"
+  },
+  {
+    "Type": "skyBreakWPA2Behavior",
+    "Method": "DoCrack",
+    "Offset": 189,
+    "Text": "Master Key",
+    "Russian": "Главный ключ"
+  },
+  {
+    "Type": "skyBreakWPA2Behavior",
+    "Method": "DoCrack",
+    "Offset": 270,
+    "Text": "Transient Key",
+    "Russian": "Временный ключ"
+  },
+  {
+    "Type": "skyBreakWPA2Behavior",
+    "Method": "UpdateKeysTested",
+    "Offset": 69,
+    "Text": " keys tested (500 k/s)]",
+    "Russian": " ключей проверено (500 тыс./с)]"
+  },
+  {
+    "Type": "skyBreakWPA2Behavior",
+    "Method": "Cracked",
+    "Offset": 154,
+    "Text": "' HAS BEEN CRACKED!",
+    "Russian": "' ВЗЛОМАНА!"
+  },
+  {
+    "Type": "skyBreakWPA2Behavior",
+    "Method": "Cracked",
+    "Offset": 204,
+    "Text": "    PASSWORD FOUND! [",
+    "Russian": "    ПАРОЛЬ НАЙДЕН! ["
+  },
+  {
+    "Type": "skyBreakWPABehavior",
+    "Method": "PerformScan",
+    "Offset": 29,
+    "Text": "Scanning...",
+    "Russian": "Сканирование..."
+  },
+  {
+    "Type": "skyBreakWPABehavior",
+    "Method": "ScanResults",
+    "Offset": 62,
+    "Text": "Scanned WPA Network Results",
+    "Russian": "Результаты поиска сетей WPA"
+  },
+  {
+    "Type": "skyBreakWPABehavior",
+    "Method": "PerformInject",
+    "Offset": 46,
+    "Text": "Invalid usage of inject. Valid usage: inject <BSSID> <CH> <Injections>",
+    "Russian": "Неверный формат команды inject. Используйте: inject <BSSID> <CH> <Injections>"
+  },
+  {
+    "Type": "skyBreakWPABehavior",
+    "Method": "PerformInject",
+    "Offset": 104,
+    "Text": "Invalid channel number.",
+    "Russian": "Неверный номер канала."
+  },
+  {
+    "Type": "skyBreakWPABehavior",
+    "Method": "PerformInject",
+    "Offset": 127,
+    "Text": "Invalid injection amount.",
+    "Russian": "Неверное число запросов."
+  },
+  {
+    "Type": "skyBreakWPABehavior",
+    "Method": "PerformInject",
+    "Offset": 140,
+    "Text": "Could not find a network with the BSSID Of '",
+    "Russian": "Не найдена сеть с BSSID '"
+  },
+  {
+    "Type": "skyBreakWPABehavior",
+    "Method": "PerformInject",
+    "Offset": 185,
+    "Text": "Invalid channel number.",
+    "Russian": "Неверный номер канала."
+  },
+  {
+    "Type": "skyBreakWPABehavior",
+    "Method": "PerformInject",
+    "Offset": 213,
+    "Text": "Invalid injection amount. Please select 1 - 1000",
+    "Russian": "Неверное число запросов. Укажите число от 1 до 1000."
+  },
+  {
+    "Type": "skyBreakWPABehavior",
+    "Method": "AddInjection",
+    "Offset": 205,
+    "Text": "Injecting De-Auth request into '",
+    "Russian": "Отправка запроса деаутентификации в сеть '"
+  },
+  {
+    "Type": "skyBreakWPABehavior",
+    "Method": "AddInjection",
+    "Offset": 497,
+    "Text": "Too many injection requests were sent at once. Network is now offline.",
+    "Russian": "Отправлено слишком много запросов одновременно. Сеть отключилась."
+  },
+  {
+    "Type": "skyBreakWPABehavior",
+    "Method": "AddInjection",
+    "Offset": 524,
+    "Text": "Remember to only send a little at a time to prevent the system from going offline.",
+    "Russian": "Отправляйте запросы небольшими порциями, чтобы сеть не отключилась."
+  },
+  {
+    "Type": "skyBreakWPABehavior",
+    "Method": "AddInjection",
+    "Offset": 714,
+    "Text": "Injection De-Auth injection was successful! Network is now ready to crack.",
+    "Russian": "Запрос деаутентификации выполнен! Теперь сеть можно взломать."
+  },
+  {
+    "Type": "skyBreakWPABehavior",
+    "Method": "PerformCrack",
+    "Offset": 43,
+    "Text": "Invalid usage of crack. Valid usage: crack <BSSID> <CH>",
+    "Russian": "Неверный формат команды crack. Используйте: crack <BSSID> <CH>"
+  },
+  {
+    "Type": "skyBreakWPABehavior",
+    "Method": "PerformCrack",
+    "Offset": 101,
+    "Text": "Invalid channel number.",
+    "Russian": "Неверный номер канала."
+  },
+  {
+    "Type": "skyBreakWPABehavior",
+    "Method": "PerformCrack",
+    "Offset": 114,
+    "Text": "Could not find a network with the BSSID Of '",
+    "Russian": "Не найдена сеть с BSSID '"
+  },
+  {
+    "Type": "skyBreakWPABehavior",
+    "Method": "PerformCrack",
+    "Offset": 159,
+    "Text": "Could not connect to network '",
+    "Russian": "Не удалось подключиться к сети '"
+  },
+  {
+    "Type": "skyBreakWPABehavior",
+    "Method": "PerformCrack",
+    "Offset": 175,
+    "Text": "' on channel:",
+    "Russian": "', канал:"
+  },
+  {
+    "Type": "skyBreakWPABehavior",
+    "Method": "PerformCrack",
+    "Offset": 266,
+    "Text": "Can not crack network '",
+    "Russian": "Не удалось взломать сеть '"
+  },
+  {
+    "Type": "skyBreakWPABehavior",
+    "Method": "PerformCrack",
+    "Offset": 282,
+    "Text": "'. No De-Auth request has been set!",
+    "Russian": "'. Сначала отправьте запрос деаутентификации!"
+  },
+  {
+    "Type": "skyBreakWPABehavior",
+    "Method": "PerformCrack",
+    "Offset": 300,
+    "Text": "Can not crack network '",
+    "Russian": "Не удалось взломать сеть '"
+  },
+  {
+    "Type": "skyBreakWPABehavior",
+    "Method": "PerformCrack",
+    "Offset": 316,
+    "Text": "'. No De-Auth request has been set!",
+    "Russian": "'. Сначала отправьте запрос деаутентификации!"
+  },
+  {
+    "Type": "skyBreakWPABehavior",
+    "Method": "DoCrack",
+    "Offset": 115,
+    "Text": "    [10 keys tested (500 k/s)]",
+    "Russian": "    [Проверено 10 ключей (500 тыс./с)]"
+  },
+  {
+    "Type": "skyBreakWPABehavior",
+    "Method": "DoCrack",
+    "Offset": 189,
+    "Text": "Master Key",
+    "Russian": "Главный ключ"
+  },
+  {
+    "Type": "skyBreakWPABehavior",
+    "Method": "DoCrack",
+    "Offset": 270,
+    "Text": "Transient Key",
+    "Russian": "Временный ключ"
+  },
+  {
+    "Type": "skyBreakWPABehavior",
+    "Method": "UpdateKeysTested",
+    "Offset": 69,
+    "Text": " keys tested (500 k/s)]",
+    "Russian": " ключей проверено (500 тыс./с)]"
+  },
+  {
+    "Type": "skyBreakWPABehavior",
+    "Method": "Cracked",
+    "Offset": 154,
+    "Text": "' HAS BEEN CRACKED!",
+    "Russian": "' ВЗЛОМАНА!"
+  },
+  {
+    "Type": "skyBreakWPABehavior",
+    "Method": "Cracked",
+    "Offset": 204,
+    "Text": "    PASSWORD FOUND! [",
+    "Russian": "    ПАРОЛЬ НАЙДЕН! ["
+  },
+  {
+    "Type": "ZeroDayProductBTNBehaviour",
+    "Method": "SetToBuy",
+    "Offset": 30,
+    "Text": "BUY",
+    "Russian": "КУПИТЬ"
+  },
+  {
+    "Type": "ZeroDayProductBTNBehaviour",
+    "Method": "SetToOwned",
+    "Offset": 30,
+    "Text": "OWNED",
+    "Russian": "КУПЛЕНО"
+  },
+  {
+    "Type": "ZeroDayProductBTNBehaviour",
+    "Method": "InstallAni",
+    "Offset": 30,
+    "Text": "Installing...",
+    "Russian": "Установка..."
+  },
+  {
+    "Type": "BreatherBehaviour",
+    "Method": "TriggerGameOver",
+    "Offset": 0,
+    "Text": "YOU WERE KILLED",
+    "Russian": "ВАС УБИЛИ"
+  },
+  {
+    "Type": "DollMakerManager",
+    "Method": "<triggerBehindPlayerJump>m__1",
+    "Offset": 15,
+    "Text": "YOU DISAPPOINTED THE DOLL MAKER",
+    "Russian": "ВЫ РАЗОЧАРОВАЛИ DOLL MAKER"
+  },
+  {
+    "Type": "DollMakerManager",
+    "Method": "<triggerComputerJump>m__3",
+    "Offset": 0,
+    "Text": "YOU DISAPPOINTED THE DOLL MAKER",
+    "Russian": "ВЫ РАЗОЧАРОВАЛИ DOLL MAKER"
+  },
+  {
+    "Type": "MagicSlinger",
+    "Method": "GetNetworkSecurityType",
+    "Offset": 0,
+    "Text": "None",
+    "Russian": "Нет"
+  },
+  {
+    "Type": "MagicSlinger",
+    "Method": "GetWifiSiginalType",
+    "Offset": 0,
+    "Text": "Unknown",
+    "Russian": "Неизвестно"
+  },
+  {
+    "Type": "MagicSlinger",
+    "Method": "GetFriendlyLocationName",
+    "Offset": 0,
+    "Text": "Unknown",
+    "Russian": "Неизвестно"
+  },
+  {
+    "Type": "MagicSlinger",
+    "Method": "GetFriendlyLocationName",
+    "Offset": 71,
+    "Text": "Bath Room",
+    "Russian": "Ванная"
+  },
+  {
+    "Type": "MagicSlinger",
+    "Method": "GetFriendlyLocationName",
+    "Offset": 82,
+    "Text": "Dead Drop",
+    "Russian": "Тайник"
+  },
+  {
+    "Type": "MagicSlinger",
+    "Method": "GetFriendlyLocationName",
+    "Offset": 93,
+    "Text": "Lobby Floor Hallway",
+    "Russian": "Коридор первого этажа"
+  },
+  {
+    "Type": "MagicSlinger",
+    "Method": "GetFriendlyLocationName",
+    "Offset": 104,
+    "Text": "Floor 10 Hallway",
+    "Russian": "Коридор 10-го этажа"
+  },
+  {
+    "Type": "MagicSlinger",
+    "Method": "GetFriendlyLocationName",
+    "Offset": 115,
+    "Text": "Floor 3 Hallway",
+    "Russian": "Коридор 3-го этажа"
+  },
+  {
+    "Type": "MagicSlinger",
+    "Method": "GetFriendlyLocationName",
+    "Offset": 126,
+    "Text": "Floor 5 Hallway",
+    "Russian": "Коридор 5-го этажа"
+  },
+  {
+    "Type": "MagicSlinger",
+    "Method": "GetFriendlyLocationName",
+    "Offset": 137,
+    "Text": "Floor 6 Hallway",
+    "Russian": "Коридор 6-го этажа"
+  },
+  {
+    "Type": "MagicSlinger",
+    "Method": "GetFriendlyLocationName",
+    "Offset": 148,
+    "Text": "Floor 8 Hallway",
+    "Russian": "Коридор 8-го этажа"
+  },
+  {
+    "Type": "MagicSlinger",
+    "Method": "GetFriendlyLocationName",
+    "Offset": 159,
+    "Text": "Lobby",
+    "Russian": "Вестибюль"
+  },
+  {
+    "Type": "MagicSlinger",
+    "Method": "GetFriendlyLocationName",
+    "Offset": 170,
+    "Text": "Maintenace Room",
+    "Russian": "Подсобка"
+  },
+  {
+    "Type": "MagicSlinger",
+    "Method": "GetFriendlyLocationName",
+    "Offset": 181,
+    "Text": "Main Room",
+    "Russian": "Гостиная"
+  },
+  {
+    "Type": "MagicSlinger",
+    "Method": "GetFriendlyLocationName",
+    "Offset": 192,
+    "Text": "Outside",
+    "Russian": "Улица"
+  },
+  {
+    "Type": "MagicSlinger",
+    "Method": "GetFriendlyLocationName",
+    "Offset": 203,
+    "Text": "Stairway",
+    "Russian": "Лестница"
+  },
+  {
+    "Type": "MemDeFragHack",
+    "Method": "PrepAttack",
+    "Offset": 356,
+    "Text": "  Loading memD3FR4G3R v0.45.570",
+    "Russian": "  Загрузка memD3FR4G3R v0.45.570"
+  },
+  {
+    "Type": "MemDeFragHack",
+    "Method": "PrepAttack",
+    "Offset": 398,
+    "Text": "  Initialzing...",
+    "Russian": "  Инициализация..."
+  },
+  {
+    "Type": "StackPusherHack",
+    "Method": "PrepStackPusherAttack",
+    "Offset": 329,
+    "Text": "  Loading stackPUSHER v1.5.20",
+    "Russian": "  Загрузка stackPUSHER v1.5.20"
+  },
+  {
+    "Type": "StackPusherHack",
+    "Method": "PrepStackPusherAttack",
+    "Offset": 371,
+    "Text": "  Initialzing...",
+    "Russian": "  Инициализация..."
+  },
+  {
+    "Type": "SweeperHack",
+    "Method": "PrepSweepAttack",
+    "Offset": 110,
+    "Text": "  Loading ZONEWALL v1.88.520",
+    "Russian": "  Загрузка ZONEWALL v1.88.520"
+  },
+  {
+    "Type": "SweeperHack",
+    "Method": "PrepSweepAttack",
+    "Offset": 152,
+    "Text": "  Initialzing...",
+    "Russian": "  Инициализация..."
+  },
+  {
+    "Type": "LoadingScreenManager",
+    "Method": "stageLoading",
+    "Offset": 21,
+    "Text": "Pro Tip: ",
+    "Russian": "Совет: "
+  },
+  {
+    "Type": "TenantTrackManager",
+    "Method": "updateTenantData",
+    "Offset": 85,
+    "Text": "FLOOR ",
+    "Russian": "ЭТАЖ "
+  },
+  {
+    "Type": "TimeKeeper",
+    "Method": "updateClock",
+    "Offset": 151,
+    "Text": "TIMES UP!",
+    "Russian": "ВРЕМЯ ВЫШЛО!"
+  },
+  {
+    "Type": "ComputerPowerHook",
+    "Method": "ShutDownComputer",
+    "Offset": 29,
+    "Text": "Powering Off",
+    "Russian": "Выключение"
+  },
+  {
+    "Type": "ComputerPowerHook",
+    "Method": "PowerComputer",
+    "Offset": 32,
+    "Text": "Powering On",
+    "Russian": "Включение"
+  },
+  {
+    "Type": "ComputerPowerHook",
+    "Method": "stageMe",
+    "Offset": 170,
+    "Text": "Powering On",
+    "Russian": "Включение"
+  },
+  {
+    "Type": "ShadowProductObject",
+    "Method": "RefreshMe",
+    "Offset": 17,
+    "Text": "Stock: ",
+    "Russian": "В наличии: "
+  },
+  {
+    "Type": "ShadowProductObject",
+    "Method": "BuildMe",
+    "Offset": 90,
+    "Text": "Stock: ",
+    "Russian": "В наличии: "
+  }
+]
