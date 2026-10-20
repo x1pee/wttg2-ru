@@ -8,6 +8,7 @@ using System.Windows.Forms;
 using System.Diagnostics;
 
 class Entry { public string path,original,translated,patch; }
+class RestoreChange { public Entry entry;public bool existed;public string snapshot; }
 class Program {
  static string Package {get{return AppDomain.CurrentDomain.BaseDirectory;}}
  static string Hash(string path) {using(var f=File.OpenRead(path))using(var h=SHA256.Create())return BitConverter.ToString(h.ComputeHash(f)).Replace("-","").ToLowerInvariant();}
@@ -47,7 +48,9 @@ class Program {
    }
   }
  }
- static void Install(string game) {
+ static void Install(string game) {InstallCore(game,delegate(string source,string destination){File.Copy(source,destination,true);});}
+ // Copy injection is confined to this private overload for real-file transaction tests.
+ static void InstallCore(string game,Action<string,string> copy) {
   game=Path.GetFullPath(game);CheckGame(game);var entries=Entries();string backup=Path.Combine(game,"WTTG2_RU_Backup");
   bool allRussian=true;foreach(var e in entries)if(!File.Exists(Full(game,e.path))||Hash(Full(game,e.path))!=e.translated)allRussian=false;
   if(allRussian){Console.WriteLine("Русский перевод уже установлен.");return;}
@@ -67,14 +70,42 @@ class Program {
   File.Copy(Path.Combine(Package,"manifest.tsv"),Path.Combine(backup,"manifest.tsv"),true);
   var installed=new List<Entry>();
   try {
-   foreach(var e in entries){string dest=Full(game,e.path);Directory.CreateDirectory(Path.GetDirectoryName(dest));File.Copy(Full(staging,e.path),dest,true);installed.Add(e);}
-  }catch {
-   foreach(var e in installed){string dest=Full(game,e.path);if(e.original=="-"){if(File.Exists(dest))File.Delete(dest);}else File.Copy(Full(backup,e.path),dest,true);}throw;
+   foreach(var e in entries){
+    string dest=Full(game,e.path);
+    // A matching helper that was already present is not owned by this installation attempt.
+    if(e.original=="-"&&File.Exists(dest))continue;
+    Directory.CreateDirectory(Path.GetDirectoryName(dest));
+    installed.Add(e); // File.Copy can truncate/write before failing; include the attempted destination.
+    copy(Full(staging,e.path),dest);
+   }
+   foreach(var e in entries)if(!File.Exists(Full(game,e.path))||Hash(Full(game,e.path))!=e.translated)throw new Exception("Проверка установки не пройдена: "+e.path);
+  }catch(Exception failure) {
+   var rollbackErrors=new List<Exception>();
+   var rollbackMessages=new List<string>();
+   for(int i=installed.Count-1;i>=0;i--){var e=installed[i];try{
+    string dest=Full(game,e.path);
+    if(e.original=="-"){if(File.Exists(dest))File.Delete(dest);}
+    else if(!File.Exists(dest)||Hash(dest)!=e.original)File.Copy(Full(backup,e.path),dest,true);
+   }catch(Exception error){rollbackErrors.Add(error);rollbackMessages.Add(e.path+": "+error.Message);}}
+   if(rollbackErrors.Count!=0){
+    rollbackErrors.Insert(0,failure);
+    throw new AggregateException("Установка остановлена; не все файлы удалось откатить. Исходная ошибка: "+failure.Message+Environment.NewLine+"Ошибки отката: "+String.Join("; ",rollbackMessages.ToArray())+Environment.NewLine+"Английские файлы сохранены в: "+backup,rollbackErrors);
+   }
+   throw;
   }
-  foreach(var e in entries)if(Hash(Full(game,e.path))!=e.translated)throw new Exception("Проверка установки не пройдена: "+e.path);
   Console.WriteLine("Русский перевод установлен. Бэкап: "+backup);
  }
- static void Restore(string game) {
+ static void CleanupRestoreTransaction(string backup,string transaction) {
+  if(transaction==null)return;
+  try {
+   string root=Path.GetFullPath(backup).TrimEnd(Path.DirectorySeparatorChar)+Path.DirectorySeparatorChar;
+   string target=Path.GetFullPath(transaction);
+   if(!target.StartsWith(root,StringComparison.OrdinalIgnoreCase)||!Path.GetFileName(target).StartsWith("restore-transaction-",StringComparison.Ordinal)||(File.GetAttributes(target)&FileAttributes.ReparsePoint)!=0)throw new Exception("Небезопасный путь временной копии.");
+   Directory.Delete(target,true); // Unique directory created by this restore attempt, never the original backup.
+  }catch(Exception error){Console.Error.WriteLine("Временную копию не удалось удалить: "+transaction+". "+error.Message);}
+ }
+ static void Restore(string game) {RestoreCore(game,delegate(string source,string destination){File.Copy(source,destination,true);});}
+ static void RestoreCore(string game,Action<string,string> copy) {
   game=Path.GetFullPath(game);CheckGame(game);string backup=Path.Combine(game,"WTTG2_RU_Backup");
   if(!File.Exists(Path.Combine(backup,"manifest.tsv")))throw new Exception("Бэкап не найден: "+backup);
   var entries=new List<Entry>();foreach(string line in File.ReadAllLines(Path.Combine(backup,"manifest.tsv"),Encoding.UTF8)) {
@@ -84,8 +115,36 @@ class Program {
    string current=Full(game,e.path);if(File.Exists(current)){string h=Hash(current);if(h!=e.translated&&h!=e.original)throw new Exception("Файл изменён после установки: "+e.path+". Восстановление остановлено, чтобы сохранить изменения.");}
    if(e.original!="-"&&(!File.Exists(Full(backup,e.path))||Hash(Full(backup,e.path))!=e.original))throw new Exception("Повреждён бэкап: "+e.path);
   }
-  foreach(var e in entries){string current=Full(game,e.path);if(e.original=="-"){if(File.Exists(current))File.Delete(current);}else{Directory.CreateDirectory(Path.GetDirectoryName(current));File.Copy(Full(backup,e.path),current,true);}}
-  foreach(var e in entries)if(e.original!="-"&&Hash(Full(game,e.path))!=e.original)throw new Exception("Ошибка проверки восстановленного файла: "+e.path);
+  var changes=new List<RestoreChange>();
+  foreach(var e in entries){string current=Full(game,e.path);bool exists=File.Exists(current);if(e.original=="-"?!exists:exists&&Hash(current)==e.original)continue;changes.Add(new RestoreChange{entry=e,existed=exists});}
+  if(changes.Count==0){Console.WriteLine("Английская версия уже восстановлена. Бэкап сохранён.");return;}
+  string transaction=Path.Combine(backup,"restore-transaction-"+Guid.NewGuid().ToString("N"));
+  if(Directory.Exists(transaction))throw new Exception("Конфликт временной папки восстановления.");
+  Directory.CreateDirectory(transaction);
+  try {
+   // Preserve the exact prior state, including partially restored installations and existing helpers.
+   // Finish every snapshot before changing any game file.
+   foreach(var change in changes)if(change.existed){change.snapshot=Full(transaction,change.entry.path);Directory.CreateDirectory(Path.GetDirectoryName(change.snapshot));File.Copy(Full(game,change.entry.path),change.snapshot,false);File.SetAttributes(change.snapshot,FileAttributes.Normal);}
+  }catch{CleanupRestoreTransaction(backup,transaction);throw;}
+  var attempted=new List<RestoreChange>();
+  try {
+   foreach(var change in changes){
+    string current=Full(game,change.entry.path);Directory.CreateDirectory(Path.GetDirectoryName(current));
+    attempted.Add(change);
+    if(change.entry.original=="-")File.Delete(current);else copy(Full(backup,change.entry.path),current);
+   }
+   foreach(var e in entries){string current=Full(game,e.path);if(e.original=="-"?File.Exists(current):!File.Exists(current)||Hash(current)!=e.original)throw new Exception("Ошибка проверки восстановленного файла: "+e.path);}
+  }catch(Exception failure){
+   var rollbackErrors=new List<Exception>();var rollbackMessages=new List<string>();
+   for(int i=attempted.Count-1;i>=0;i--){var change=attempted[i];try{
+    string current=Full(game,change.entry.path);
+    if(change.existed){if(!File.Exists(current)||Hash(current)!=Hash(change.snapshot))File.Copy(change.snapshot,current,true);}
+    else if(File.Exists(current))File.Delete(current);
+   }catch(Exception error){rollbackErrors.Add(error);rollbackMessages.Add(change.entry.path+": "+error.Message);}}
+   if(rollbackErrors.Count!=0){rollbackErrors.Insert(0,failure);throw new AggregateException("Восстановление остановлено; не все изменения удалось откатить. Исходная ошибка: "+failure.Message+Environment.NewLine+"Ошибки отката: "+String.Join("; ",rollbackMessages.ToArray())+Environment.NewLine+"Копия состояния перед восстановлением сохранена в: "+transaction,rollbackErrors);}
+   CleanupRestoreTransaction(backup,transaction);throw;
+  }
+  CleanupRestoreTransaction(backup,transaction);
   Console.WriteLine("Английская версия восстановлена. Бэкап сохранён.");
  }
  static void Verify(string game) {foreach(var e in Entries())if(!File.Exists(Full(game,e.path))||Hash(Full(game,e.path))!=e.translated)throw new Exception("Не совпадает русский файл: "+e.path);Console.WriteLine("Все файлы русского перевода проверены.");}
