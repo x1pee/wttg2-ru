@@ -1,6 +1,8 @@
-# WTTG2 RU
+# WTTG2 RU — Welcome to the Game II
 
-WTTG2 Russian translation mod.
+Partial Russian translation for Welcome to the Game II (WTTG2): menus, websites and subtitles. English audio.
+
+**Скачать:** [готовые файлы](https://github.com/x1pee/wttg2-ru/releases/tag/v0.3.0-rc).
 
 Русский перевод для Welcome to the Game II (Unity 2017.3, Windows x64). Поддержка кириллицы, перевод интерфейса, сайтов и субтитров. Это предварительный выпуск: часть текста остаётся английской, озвучка исходная. Полного прохождения и независимой проверки перевода человеком не было.
 
